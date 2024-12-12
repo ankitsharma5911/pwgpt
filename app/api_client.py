@@ -1,9 +1,10 @@
 # app/api_client.py
+from dotenv import load_dotenv
 
 import os
 from groq import Groq
 from logger import CustomLogger  # Import your custom logger
-
+load_dotenv()
 class GroqClient:
     """Class to interact with the Groq API."""
 
